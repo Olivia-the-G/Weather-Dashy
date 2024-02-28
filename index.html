@@ -1,13 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./dev/css/style.css"> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./Assets/css/style.css" />
   <title>Weather Dashy</title>
 </head>
 
 <body>
-  
+  <header>
+    <h1>Weather Dashy</h1>
+  </header>
+
+  <main>
+    <section class="container" id="search-form">
+      <h1>Search For a City</h1>
+      <form id="searchBar">
+        <input type="text" id="searchInput" placeholder="Enter your city">
+        <button type="submit">Search</button>
+      </form>
+      <div id="searchHistory">
+        <h3>Search History</h3>
+        <ul></ul>
+      </div>
+    </section>
+    <div id="weatherContainer">
+      <section id="currentWeather">
+        <h4>Please enter a city to see current weather conditions</h4>
+      </section>
+
+      <section class="forecast">
+        <h2>5-Day Forecast</h2>
+        <div class="card-container">
+          <article class="weatherCard" id="day1"></article>
+          <article class="weatherCard" id="day2"></article>
+          <article class="weatherCard" id="day3"></article>
+          <article class="weatherCard" id="day4"></article>
+          <article class="weatherCard" id="day5"></article>
+        </div>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <script src="./Assets/js/script.js"></script>
 </body>
+
 </html>
