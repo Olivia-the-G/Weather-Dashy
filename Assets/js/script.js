@@ -11,7 +11,7 @@ if (localStorage.getItem("searchHistory")) {
 // Display search history on screen
 function loadSearchHistory() {
   var searchEl = document.getElementById("searchHistory");
-  searchEl.innerHTML = ""; 
+  searchEl.innerHTML = "";
 
   for (var i = 0; i < searchHistory.length; i++) {
     var listEl = document.createElement("li");
@@ -69,7 +69,7 @@ function updateWeather(city) {
       console.log(data);
       // clear greeting instructions
       var heading = document.getElementById("currentWeather");
-      heading.innerHTML = ""; 
+      heading.innerHTML = "";
 
       var cityNameEl = document.createElement("h2");
       cityNameEl.textContent = data.name;
@@ -100,7 +100,7 @@ function updateWeather(city) {
     });
 
   // Get the 5-day forecast data
-  var forecastReqUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APIKey}&units=metric`;
+  var forecastReqUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${APIKey}&units=metric`;
 
   // Fetch the forecast data from the API
   fetch(forecastReqUrl)
@@ -112,28 +112,32 @@ function updateWeather(city) {
       }
     })
     .then(function (data) {
-      // Update the header for the 5-day forecast
-      var forecastHeaderEl = document.createElement("h2");
-      forecastHeaderEl.textContent = "5-Day Forecast";
-      document.getElementById("forecast").appendChild(forecastHeaderEl);
-
       // Clear the existing forecast cards
-      var weatherCardsEl = document.getElementById("card-container");
-      weatherCardsEl.innerHTML = "";
+      var cardContainerEl = document.getElementById("card-container");
+      cardContainerEl.innerHTML = "";
+
+      // Select the data we want to use
+      var dataSet = [
+        data.list[4],
+        data.list[12],
+        data.list[20],
+        data.list[28],
+        data.list[36]
+      ];
 
       // Loop through the forecast data and create cards for each day
-      for (var i = 0; i < data.length; i += 6) {
-        var weatherData = data[i];
+      for (var i = 0; i < dataSet.length; i++) {
+        var weatherData = dataSet[i];
 
         var cardEl = document.createElement("div");
-        cardEl.classList.add("card");
+        cardEl.classList.add("weatherCard");
 
         var cardDateEl = document.createElement("h3");
-        cardDateEl.textContent = moment(weatherData.dt_txt).format("MMMM DD, YYYY");
+        cardDateEl.textContent = dayjs(weatherData.dt_txt).format("MMMM DD, YYYY");
         cardEl.appendChild(cardDateEl);
 
         var cardIconEl = document.createElement("img");
-        cardIconEl.setAttribute("src", `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+        cardIconEl.setAttribute("src", `https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`);
         cardEl.appendChild(cardIconEl);
 
         var cardTempEl = document.createElement("p");
@@ -148,7 +152,7 @@ function updateWeather(city) {
         cardWindSpeedEl.textContent = "Wind Speed: " + weatherData.wind.speed + " m/s";
         cardEl.appendChild(cardWindSpeedEl);
 
-        weatherCardsEl.appendChild(cardEl);
+        cardContainerEl.appendChild(cardEl);
       }
     })
     .catch(function (error) {
