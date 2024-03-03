@@ -15,36 +15,31 @@
 
   <main>
     <section class="container" id="search-form">
-      <h1>Search For a City</h1>
+      <h2 id="citys">Search For a City</h2>
       <form id="searchBar">
         <input type="text" id="searchInput" placeholder="Enter your city">
         <button type="submit">Search</button>
       </form>
-      <div id="searchHistory">
+      <div>
         <h3>Search History</h3>
-        <ul></ul>
+        <ul id="searchHistory"></ul>
       </div>
     </section>
+    
     <div id="weatherContainer">
       <section id="currentWeather">
         <h4>Please enter a city to see current weather conditions</h4>
       </section>
 
-      <section class="forecast">
+      <section id="forecast">
         <h2>5-Day Forecast</h2>
-        <div class="card-container">
-          <article class="weatherCard" id="day1"></article>
-          <article class="weatherCard" id="day2"></article>
-          <article class="weatherCard" id="day3"></article>
-          <article class="weatherCard" id="day4"></article>
-          <article class="weatherCard" id="day5"></article>
+        <div id="card-container">
         </div>
     </div>
   </main>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/datejs/1.0/date.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="./Assets/js/script.js"></script>
 </body>
 

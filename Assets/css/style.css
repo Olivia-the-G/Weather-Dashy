@@ -14,36 +14,109 @@ header {
   justify-content: flex-end;
   align-items: center;
   padding: 20px 10%;
-  background-color: blue;
+  background-color: rgb(6, 31, 114);
   font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+  color: #ddf7aa;
+  font-size: 2.5rem;
+  text-decoration: overline dotted;
+}
+
+h2 {
+  padding: 5px 0px 5px 5px;
+}
+
+h3 {
+  padding: 5px 0px 5px 5px;
+  font-size: 20px;
+}
+
+h4 {
+  padding: 5px 0px 5px 5px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+p {
+  padding: 2px 5px;
+  font-size: 17px;
+}
+
+#currentWeather p {
+  padding: 10px 10px 10px 10px;
+}
+
+#citys {
+  background-color: bisque;
+  padding: 5px 0px 5px 5px;
+  margin-bottom: 5px;
+  border-radius: 10px;
 }
 
 .container {
   height: 50vmax;
-  width: 35%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-content: flex-start;
   padding: 10px 10px;
-  background-color: yellowgreen;
+  background-color: whitesmoke;
+  border: solid 3px;
+  border-color: bisque;
 }
 
 #weatherContainer {
   display: flex;
   flex-direction: column;
   width: 100%;
+  align-content: flex-start;
+  background-color: whitesmoke;
+  border: solid 3px;
+  border-color: bisque;
 }
 
 #currentWeather {
   display: flex;
-  height: 100px;
+  height: 250px;
   width: 100%;
-  background-color: yellow;
+  background-color: rgb(214, 221, 255);
 }
 
-.forecast {
+#forecast {
   display: inline-flex;
+  flex-direction: column;
   height: 100%;
   width: 100%;
-  background-color: red;
+  background-color: whitesmoke;
+  border-bottom: solid 3px;
+  border-top: solid 3px;
+  border-right: solid 3px;
+  border-color: bisque;
+}
+
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: space-around;
+  height: 100%;
+  width: 100%;
+}
+
+.weatherCard {
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(113, 113, 255);
+  border-radius: 10px;
+  border: solid 3px bisque;
+  box-shadow: 6px 4px 13px 0px;;
+}
+
+.weatherCard img {
+  width: 60px;
+  height: 60px;
 }
