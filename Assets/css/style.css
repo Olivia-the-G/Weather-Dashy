@@ -28,12 +28,22 @@ h2 {
   padding: 5px 0px 5px 5px;
 }
 
+h3 {
+  padding: 5px 0px 5px 5px;
+  font-size: 20px;
+}
+
 h4 {
   padding: 5px 0px 5px 5px;
 }
 
 ul {
   list-style-type: none;
+}
+
+p {
+  padding: 2px 5px;
+  font-size: 17px;
 }
 
 #currentWeather p {
@@ -49,12 +59,12 @@ ul {
 
 .container {
   height: 50vmax;
-  width: 35%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   align-content: flex-start;
   padding: 10px 10px;
-  background-color: var(--white);
+  background-color: whitesmoke;
   border: solid 3px;
   border-color: bisque;
 }
@@ -64,16 +74,16 @@ ul {
   flex-direction: column;
   width: 100%;
   align-content: flex-start;
-  background-color: var(--white);
+  background-color: whitesmoke;
   border: solid 3px;
   border-color: bisque;
 }
 
 #currentWeather {
   display: flex;
-  height: 100px;
+  height: 250px;
   width: 100%;
-  background-color: var(--white);
+  background-color: rgb(214, 221, 255);
 }
 
 #forecast {
@@ -81,7 +91,7 @@ ul {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  background-color: var(--white);
+  background-color: whitesmoke;
   border-bottom: solid 3px;
   border-top: solid 3px;
   border-right: solid 3px;
@@ -100,5 +110,13 @@ ul {
 
 .weatherCard {
   padding: 10px 10px 10px 10px;
+  background-color: rgb(113, 113, 255);
+  border-radius: 10px;
+  border: solid 3px bisque;
+  box-shadow: 6px 4px 13px 0px;;
 }
 
+.weatherCard img {
+  width: 60px;
+  height: 60px;
+}

@@ -80,7 +80,7 @@ function updateWeather(city) {
       document.getElementById("currentWeather").appendChild(weatherIconEl);
 
       var dateEl = document.createElement("p");
-      dateEl.textContent = dayjs().format("DD/MM/YYYY");
+      dateEl.textContent = dayjs().format("MMMM DD, YYYY");
       document.getElementById("currentWeather").appendChild(dateEl);
 
       var tempEl = document.createElement("p");
