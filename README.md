@@ -17,6 +17,7 @@ If you want to go back and see the weather for a city you searched previously, j
 
 ## Application
 
+Visit the deployed application here --> https://olivia-the-g.github.io/weather-dashy/ 
 
 ## License
 This application is under the MIT license. To see full license details, [click here](https://opensource.org/license/mit/)
