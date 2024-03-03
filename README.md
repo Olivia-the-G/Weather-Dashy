@@ -16,8 +16,9 @@ To find the weather for your city, just type it into the search bar and press se
 If you want to go back and see the weather for a city you searched previously, just click on the city name in the search history and the weather data will be displayed again. 
 
 ## Application
-
 Visit the deployed application here --> https://olivia-the-g.github.io/weather-dashy/ 
+![weather dashy](https://github.com/Olivia-the-G/weather-dashy/assets/130778807/7c9698c0-c3bd-48ca-adfb-e0b7061e38e8)
+
 
 ## License
 This application is under the MIT license. To see full license details, [click here](https://opensource.org/license/mit/)
