@@ -11,6 +11,9 @@ This is a weather dashboard application that uses **OpenWeather API**, Day.js, a
 - [Contact](#contact)
 
 ## Usage
+To find the weather for your city, just type it into the search bar and press search. The current weather will be displayed on the right, as well as the five-day forecast underneath that. 
+
+If you want to go back and see the weather for a city you searched previously, just click on the city name in the search history and the weather data will be displayed again. 
 
 ## Application
 
