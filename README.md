@@ -1,7 +1,7 @@
 # Weather Dashy [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=flat-square&link=https%3A%2F%2Fopensource.org%2Flicense%2Fmit%2F)](https://opensource.org/license/mit/)
 
 ## Description 
-This is a weather dashboard application that uses **OpenWeather API**, Day.js, and JQuery
+This is a Front-End weather dashboard application that provides the user with a detailed overview of the current weather in their city as well as a 5-day forecast for their area. The application uses APIs and code libraries to provide the user with current and accurate information - See [Technologies Used](#technologies-used) for more information. 
 
 ## Table of Contents
 
@@ -12,9 +12,9 @@ This is a weather dashboard application that uses **OpenWeather API**, Day.js, a
 - [Contact](#contact)
 
 ## Technologies Used
-- OpenWeather API is used to retreive the weather data along with thier geocoding API which uses the user's location data in order to give them the correct weather data for their area.
-- Day.js is used to provide and format the current date and time to the user 
-- JQeury is used in part for functions and javascript code
+- **OpenWeather API** is used to retreive the weather data along with thier geocoding API which uses the user's location data in order to give them the correct weather data for their area.
+- **Day.js** is used to provide and format the current date and time to the user 
+- **JQeury** is used in part for functions and javascript code
 
 ## Usage
 To find the weather for your city, just type it into the search bar and press search. The current weather will be displayed on the right, as well as the five-day forecast underneath that. 
