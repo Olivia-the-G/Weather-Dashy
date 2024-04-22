@@ -5,10 +5,16 @@ This is a weather dashboard application that uses **OpenWeather API**, Day.js, a
 
 ## Table of Contents
 
+- [Technologies Used](#technologies-used)
 - [Usage](#usage)
 - [Application](#application)
 - [License](#license)
 - [Contact](#contact)
+
+## Technologies Used
+- OpenWeather API is used to retreive the weather data along with thier geocoding API which uses the user's location data in order to give them the correct weather data for their area.
+- Day.js is used to provide and format the current date and time to the user 
+- JQeury is used in part for functions and javascript code
 
 ## Usage
 To find the weather for your city, just type it into the search bar and press search. The current weather will be displayed on the right, as well as the five-day forecast underneath that. 
@@ -17,8 +23,8 @@ If you want to go back and see the weather for a city you searched previously, j
 
 ## Application
 Visit the deployed application here --> https://olivia-the-g.github.io/weather-dashy/ 
-![weather dashy](https://github.com/Olivia-the-G/weather-dashy/assets/130778807/7c9698c0-c3bd-48ca-adfb-e0b7061e38e8)
 
+![weather dashy](https://github.com/Olivia-the-G/weather-dashy/assets/130778807/7c9698c0-c3bd-48ca-adfb-e0b7061e38e8)
 
 ## License
 This application is under the MIT license. To see full license details, [click here](https://opensource.org/license/mit/)
